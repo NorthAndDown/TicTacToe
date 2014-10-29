@@ -8,9 +8,15 @@ public class Game {
 	
 	//kallar i initialize og luppar(while table.notFull||!win)
 	public void start() {
-		System.out.println("======= Tic Tac Toe =======");
+		welcomeMsg();
 		table = new Table();
 		table.print();
-		
+		gameOverMsg();
+	}
+	private void welcomeMsg() {
+		System.out.println("======= Tic Tac Toe =======");
+	}
+	private void gameOverMsg() {
+		System.out.println("=======  Game over  =======");
 	}
 }
