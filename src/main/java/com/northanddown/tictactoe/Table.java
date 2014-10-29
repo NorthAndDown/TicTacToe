@@ -9,7 +9,11 @@ public class Table {
 	public void initialize() {
 
 	}
-	public void print(){}
+
+	public void print(){
+	
+	}
+
 	public void inputChecker(){}
 	public void isFull(){}
 	public void checkForWin(){}
