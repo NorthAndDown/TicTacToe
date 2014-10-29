@@ -16,5 +16,5 @@ public class Table {
 	private void checkHorWin(){}
         private void checkVerWin(){}
         private void checkDiaWin(){}
-        private void insert(){}
+        private void  insert(){}
 }
