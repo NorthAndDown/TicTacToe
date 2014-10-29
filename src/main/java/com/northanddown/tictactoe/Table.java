@@ -9,13 +9,20 @@ public class Table {
 	public void initialize() {
 		for(int i = 0 ; i < 3 ; i++){
 			for(int j = 0 ; j < 3 ; j++){
-				// board[i][j] = '';
+				 board[i][j] = '.';
 			}
 		}
 	}
 
-/*	public void print(){
-	
+	public void print(){
+		System.out.println("  0 1 2");
+		System.out.print("-------");
+                for(int i = 0 ; i < 3 ; i++){
+                        for(int j = 0 ; j < 3 ; j++){
+                                 System.out.print(" " + board[i][j] + " ");
+                        }
+			System.out.println();
+                }
 	}
 
 	public void inputChecker(){
@@ -46,5 +53,4 @@ public class Table {
 
 	}
 
-	*/
 }
