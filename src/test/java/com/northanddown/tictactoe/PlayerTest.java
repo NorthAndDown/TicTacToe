@@ -10,8 +10,8 @@ public class PlayerTest {
 	// Test for constructor
 	@Test
 	public void testPlayerConstructor() {
-		Player player = new Player('x');
-        	assertEquals(player.getSign(), 'x');
+		Player player = new Player('X');
+        	assertEquals(player.getSign(), 'X');
 	}
 
 }
