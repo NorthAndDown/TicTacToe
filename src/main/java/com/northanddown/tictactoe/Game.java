@@ -7,7 +7,7 @@ public class Game {
 	private Player currentPlayer;
 	
 	//kallar i initialize og luppar(while table.notFull||!win)
-	public void start() {
+	public void run() {
 		welcomeMsg();
 		table = new Table();
 		table.print();
