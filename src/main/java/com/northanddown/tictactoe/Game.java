@@ -30,13 +30,23 @@ public class Game {
 		System.out.println("=======  Game over  =======");
 	}
 	private void play() {
-		// boolean playing = true;
-		while (!table.isFull() || table.checkForWin()) {
+		boolean playing = true;
+		while (playing) {
 			table.print();
 			printWhosTurn();
 			getInput();
+			if(table.isFull()){
+				playing = false;
+				System.out.println("Table is full: Draw");
+				table.print();
+			}
+			if(table.checkForWin())
+			{
+				System.out.println("Player " + currentPlayer.getSign() + " has won the game");
+				table.print();
+				playing = false;
+			}
 			swapPlayers();
-			// playing = false;
 		}
 	}
 	private void printWhosTurn() {
@@ -45,9 +55,6 @@ public class Game {
 
 	private void getInput() {
 		int x,y;
-	//	System.out.println("aetla ad opna scanner");
-		//Scanner in = new Scanner(System.in);
-	//	System.out.println("Opna input stream");
 		System.out.println("Please enter the x/y values");
 		System.out.print("X: ");
 		Scanner xIN = new Scanner(System.in);
@@ -70,12 +77,8 @@ public class Game {
 			}while(!table.inputChecker(x,y));
 		}
 
-		System.out.println("Input straum lokad");
 		System.out.println("X: " + x + " Y: " + y);
 		table.insert(x, y, currentPlayer.getSign());
-		System.out.println("Buinn ad inserta");
-		System.out.println("Currplayer char = " + currentPlayer.getSign()); 
-		//in.close();
 	}
 
 	private void swapPlayers() {
