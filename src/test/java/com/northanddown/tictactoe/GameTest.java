@@ -89,5 +89,19 @@ public class GameTest {
                 assertEquals(false, board.checkForWin());
          }
 
+	@Test
+        public void OutOfBounds() {
+                Table board = new Table();
+		assertEquals(false, board.inputChecker(0, 3));
+		assertEquals(false, board.inputChecker(3, 0));
+		assertEquals(false, board.inputChecker(-1, 2));
+		assertEquals(false, board.inputChecker(0, -1));
+		assertEquals(false, board.inputChecker(-2, -2));
+		assertEquals(false, board.inputChecker(4, 4));
+		assertEquals(true, board.inputChecker(0, 0));
+		assertEquals(true, board.inputChecker(2, 2));
+		assertEquals(true, board.inputChecker(2, 0));
+		assertEquals(true, board.inputChecker(0, 2));
+	}
 }
 
