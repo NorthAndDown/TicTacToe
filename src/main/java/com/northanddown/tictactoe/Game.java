@@ -7,7 +7,7 @@ public class Game {
 	private Player playerX;
 	private Player playerO;
 	private Player currentPlayer;
-	
+
 	public void run() {
 		initTable();
 		initPlayers();
@@ -43,7 +43,7 @@ public class Game {
 	private void printWhosTurn() {
 		System.out.println("It is " + currentPlayer.getSign() + " turn to play");
 	}
-	
+
 	private void getInput() {
 		int x,y;
 		Scanner in = new Scanner(System.in);
@@ -52,7 +52,18 @@ public class Game {
  		x=in.nextInt();
 		System.out.print("Y: ");
  		y=in.nextInt();
-		in.close();       
+		in.close();
 		System.out.println("X: " + x + " Y: " + y);
+	}
+
+	private void swapPlayers() {
+		if(currentPlayer == playerX)
+		{
+			currentPlayer = playerO;
+		}
+		else
+		{
+			currentPlayer = playerX;
+		}
 	}
 }
