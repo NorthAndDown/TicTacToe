@@ -24,5 +24,4 @@ public class TestTable{
         assertEquals(true, table.inputChecker(1, 0));
         }
 
-
 }
