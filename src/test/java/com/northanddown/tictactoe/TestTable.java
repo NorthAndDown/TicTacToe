@@ -5,12 +5,12 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class TestTable{
-	@Test
-	public void testPrint(){
-	Table table = new Table();
-	table.print();
-	//assertNotEquals("", "");
-	}
+    @Test
+    public void testPrint(){
+    Table table = new Table();
+    table.print();
+    //assertNotEquals("", "");
+    }
 
         @Test
         public void testInputOutOfBounds(){
@@ -18,7 +18,7 @@ public class TestTable{
         assertEquals(false, table.inputChecker(4, 0));
         }
 
-	@Test
+    @Test
         public void testValidInput(){
         Table table = new Table();
         assertEquals(true, table.inputChecker(1, 0));

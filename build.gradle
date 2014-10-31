@@ -10,6 +10,7 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'checkstyle'
 
 mainClassName = "com.northanddown.tictactoe.TicTacToe"
 
@@ -41,3 +42,7 @@ jar {
 		attributes("Main-Class": "com.northanddown.tictactoe.TicTacToe")
 	} 
 }
+
+checkstyle {
+       configFile = new File(rootDir, "checkstyle.xml")
+    }

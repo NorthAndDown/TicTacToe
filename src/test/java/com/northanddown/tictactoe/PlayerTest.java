@@ -7,12 +7,12 @@ import org.junit.Test;
 public class PlayerTest {
 
 
-	// Test for constructor
-	@Test
-	public void testPlayerConstructor() {
-		Player player = new Player('X');
-        	assertEquals(player.getSign(), 'X');
-	}
+    // Test for constructor
+    @Test
+    public void testPlayerConstructor() {
+        Player player = new Player('X');
+            assertEquals(player.getSign(), 'X');
+    }
 
 }
 
