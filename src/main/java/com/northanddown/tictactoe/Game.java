@@ -35,12 +35,12 @@ public class Game {
             table.print();
             printWhosTurn();
             getInput();
-            if(table.isFull()){
+            if (table.isFull()){
                 playing = false;
                 System.out.println("Table is full: Draw");
                 table.print();
             }
-            if(table.checkForWin())
+            if (table.checkForWin())
             {
                 System.out.println("Player " + currentPlayer.getSign() + " has won the game");
                 table.print();
@@ -58,14 +58,14 @@ public class Game {
         System.out.println("Please enter the x/y values");
         System.out.print("X: ");
         Scanner xIN = new Scanner(System.in);
-         x = xIN.nextInt();
+        x = xIN.nextInt();
         System.out.print("Y: ");
         Scanner yIN = new Scanner(System.in);
-         y = yIN.nextInt();
+        y = yIN.nextInt();
 
-        if(!table.inputChecker(x,y))
+        if (!table.inputChecker(x,y))
         {
-            do{
+            do {
             System.out.println("Input was wrong. Please try again");
             System.out.println("X and Y must be between 0 and 2");
             System.out.print("X: ");
@@ -74,7 +74,7 @@ public class Game {
             System.out.print("Y: ");
             Scanner tempY = new Scanner(System.in);
              y = tempY.nextInt();
-            }while(!table.inputChecker(x,y));
+            } while (!table.inputChecker(x,y));
         }
 
         System.out.println("X: " + x + " Y: " + y);
@@ -83,7 +83,7 @@ public class Game {
 
     // function to swap players after round
     private void swapPlayers() {
-        if(currentPlayer == playerX)
+        if (currentPlayer == playerX)
         {
             currentPlayer = playerO;
         }
