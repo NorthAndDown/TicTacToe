@@ -33,6 +33,21 @@ To be able to run the project, Java must be installed. To install java:
 
     $ sudo apt-get install openjdk-7-jdk
 
-Now you should be able to run the project, from the project root:
+Now you should be able to build the project, from the project root:
+
+    $ ./bin/build_and_test
+
+To run the project, from the project root:
 
     $ ./bin/run
+
+Happy coding!
+
+
+### Administration manual
+
+To install the TicTacToe program on a fresh client, as a simple desktop program, make sure you have Java installed.
+
+**How do I install Java ?**
+
+Follow these instructinos: https://www.java.com/en/download/help/download_options.xml
