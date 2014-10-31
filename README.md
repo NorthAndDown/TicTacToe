@@ -51,3 +51,7 @@ To install the TicTacToe program on a fresh client, as a simple desktop program,
 **How do I install Java ?**
 
 Follow these instructinos: https://www.java.com/en/download/help/download_options.xml
+
+** For Linux and mac:**
+
+
