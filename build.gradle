@@ -35,3 +35,9 @@ dependencies {
 run {
 	standardInput = System.in
 }
+
+jar {
+	manifest {
+		attributes("Main-Class": "com.northanddown.tictactoe.TicTacToe")
+	} 
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf /tmp/TicTacToe
+cp -r build/install/TicTacToe /tmp/TicTacToe
+echo "TicTacToe install folder copied to /tmp/TicTacToe"
+cd /tmp/TicTacToe/
+./bin/TicTacToe
