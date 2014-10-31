@@ -81,6 +81,7 @@ public class Game {
 		table.insert(x, y, currentPlayer.getSign());
 	}
 
+	// function to swap players after round
 	private void swapPlayers() {
 		if(currentPlayer == playerX)
 		{
