@@ -38,7 +38,7 @@ public class Table {
 		if(x < 0 || x > 2 || y < 0 || y > 2){
 			return false;
 		}
-		if(board[y][x] == ' '){
+		if(board[x][y] == ' '){
 			return true;
 		}
 		return false;
