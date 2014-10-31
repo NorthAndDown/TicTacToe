@@ -35,8 +35,6 @@ public class Game {
 			table.print();
 			printWhosTurn();
 			getInput();
-
-
 			playing = false;
 		}
 	}
@@ -52,8 +50,21 @@ public class Game {
  		x=in.nextInt();
 		System.out.print("Y: ");
  		y=in.nextInt();
+		if(!table.inputChecker(x,y))
+		{
+			do{
+			System.out.println("Input was wrong. Please try again");
+			System.out.println("X and Y must be between 0 and 2");
+			System.out.print("X: ");
+ 			x=in.nextInt();
+			System.out.print("Y: ");
+ 			y=in.nextInt();
+			}while(!table.inputChecker(x,y));
+		}
+
 		in.close();
 		System.out.println("X: " + x + " Y: " + y);
+		table.insert(x, y, currentPlayer.getSign());
 	}
 
 	private void swapPlayers() {

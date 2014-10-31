@@ -91,7 +91,7 @@ public class Table {
 		return false;
 	}
 
-        private void insert(int x, int y, char c){
+        public void insert(int x, int y, char c){
 		board[x][y] = c;
 	}
 
