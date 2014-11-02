@@ -1,6 +1,9 @@
 #!/bin/bash
-rm -rf /tmp/TicTacToe
-cp -r build/install/TicTacToe /tmp/TicTacToe
-echo "TicTacToe install folder copied to /tmp/TicTacToe"
-cd /tmp/TicTacToe/
-./bin/TicTacToe
+git pull
+./bin/build_and_test
+./bin/package
+./gradlew distZip
+cp -r build/reports/tests/ /usr/share/nginx/html/
+cp build/distributions/TicTacToe.zip /usr/share/nginx/html/TicTacToe.zip
+
+echo "TicTacToe results and zip file updated"
