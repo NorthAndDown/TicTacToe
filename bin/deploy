@@ -3,7 +3,7 @@ git pull
 ./bin/build_and_test
 ./bin/package
 ./gradlew distZip
-cp -r build/reports/tests/ /usr/share/nginx/html/
+cp -r build/reports/ /usr/share/nginx/html/
 cp build/distributions/TicTacToe.zip /usr/share/nginx/html/TicTacToe.zip
 
 echo "TicTacToe results and zip file updated"
