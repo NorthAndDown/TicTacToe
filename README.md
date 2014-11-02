@@ -54,4 +54,8 @@ Follow these instructinos: https://www.java.com/en/download/help/download_option
 
 ** For Linux and mac:**
 
+Download the TicTacToe.zip file on http://green.jarni.net.
+Extract the zip file. From terminal, run 
+        $ ./bin/TicTacToe
 
+Have fun playing TicTacToe!
